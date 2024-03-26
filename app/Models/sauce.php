@@ -15,7 +15,7 @@ class sauce extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-            'name','manufacturer','description','mainPepper','imageUrl','heat','likes', 'dislikes','userDisliked','userLiked'
+            'name','manufacturer','description','mainPepper','imageUrl','heat','likes', 'dislikes','userDisliked','userLiked',
     ];
 
     /**
@@ -24,7 +24,7 @@ class sauce extends Model
      * @var array<string, string>
      */
     protected $casts = [
-        'userLiked' => array(),
-        'userDisliked' => array(),
+        'userLiked' => 'array',
+        'userDisliked' => 'array',
     ];
 }
