@@ -20,10 +20,11 @@ class CreateSaucesTable extends Migration
             $table->string('description');
             $table->string('mainPepper');
             $table->string('imageUrl');
-            $table->number('heat');
-            $table->number('likes');
-            $table->number('dislikes');
+            $table->integer('heat');
+            $table->integer('likes');
+            $table->integer('dislikes');
             $table->json('userLiked');
+            $table->json('userDisliked');
             $table->timestamps();
         });
     }

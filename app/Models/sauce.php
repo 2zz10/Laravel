@@ -15,6 +15,7 @@ class sauce extends Model
      * @var array<int, string>
      */
     protected $fillable = [
+            'name','manufacturer','description','mainPepper','imageUrl','heat','likes', 'dislikes','userDisliked','userLiked'
     ];
 
     /**
